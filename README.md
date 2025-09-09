@@ -1,36 +1,75 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Rishabh's Blog
+
+A modern blog built with Next.js, MDX, and Tailwind CSS for sharing DIY projects, smart home automation, and maker adventures.
+
+## Features
+
+- ✨ Modern, responsive design with dark mode support
+- 📝 MDX support for rich content creation
+- 🎨 Beautiful typography with Tailwind CSS
+- 🚀 Fast performance with Next.js App Router
+- 📱 Mobile-friendly responsive layout
+- 🔍 SEO optimized
 
 ## Getting Started
 
-First, run the development server:
-
+1. Install dependencies:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+pnpm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Run the development server:
+```bash
+pnpm dev
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Open [http://localhost:3000](http://localhost:3000) to view the blog
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Project Structure
 
-## Learn More
+```
+src/
+├── app/
+│   ├── blog/[slug]/          # Dynamic blog post routes
+│   ├── layout.tsx            # Root layout
+│   └── page.tsx              # Homepage
+├── components/
+│   ├── BlogLayout.tsx        # Blog layout component
+│   ├── BlogCard.tsx          # Blog post card component
+│   └── mdx-components.tsx    # MDX component customizations
+└── content/
+    └── posts/                # Blog posts (for future expansion)
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Current Posts
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **DIY Smart Alarm System**: A comprehensive guide to building a smart alarm system using WLED, DFPlayer Mini, and n8n automation. Features an interactive tabbed interface with sections for Introduction, Hardware Setup, Software & Architecture, and Use Cases with sub-navigation.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Technologies Used
 
-## Deploy on Vercel
+- **Next.js 15** - React framework with App Router
+- **MDX** - Markdown with JSX components
+- **Tailwind CSS** - Utility-first CSS framework
+- **TypeScript** - Type-safe JavaScript
+- **Geist Font** - Modern typography
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Adding New Posts
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+To add a new blog post:
+
+1. Create a new component in `src/app/blog/[slug]/`
+2. Add the post metadata to the `posts` object in `page.tsx`
+3. Update the homepage post list
+
+## Deployment
+
+This project is ready to deploy on Vercel, Netlify, or any platform that supports Next.js.
+
+```bash
+pnpm build
+pnpm start
+```
+
+## License
+
+MIT License - feel free to use this as a template for your own blog!
