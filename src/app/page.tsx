@@ -6,7 +6,7 @@ export default function Home() {
   const featuredPost = {
     title: "I built a Sentinel AI system using n8n and ChatGPT with ESP8266",
     excerpt: "Sentinel AI is a device with RGB lights and a speaker that sits on my desk and connects to n8n. It saves me from missing important meetings and emails, and protects my home when I'm away. Thanks to AI technology that made this possible.",
-    date: "December 2024",
+    date: "January 2025",
     readTime: "6 min read",
     slug: "smart-alarm-system",
     tags: ["AI", "IoT", "Home Security", "ESP8266", "n8n"]

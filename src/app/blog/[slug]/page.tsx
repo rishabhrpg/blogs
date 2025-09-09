@@ -9,7 +9,7 @@ interface BlogPostPageProps {
 const posts = {
   'smart-alarm-system': {
     title: "I built a Sentinel AI system using n8n and ChatGPT with ESP8266",
-    date: "December 2024",
+    date: "January 2025",
     readTime: "6 min read",
     component: SmartAlarmPost
   }
